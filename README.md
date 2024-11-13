@@ -22,3 +22,6 @@ Convert it into a long-lived token by making an API call, so that you don’t ha
 You need an Instagram Business or Creator account to access more detailed metrics. `To link it`:<br>
 In Instagram settings, switch your account to either Business or Creator.<br>
 Link your Instagram account to the Facebook Page that you’ll manage via the API.<br>
+
+# PROGETTI DI ALTRI
+[@brauliovillalobos](https://github.com/brauliovillalobos/data-driven-modeling-complex-systems-10600503)
