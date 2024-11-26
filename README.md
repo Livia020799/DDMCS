@@ -45,8 +45,9 @@
       - Find correlations between node attributes and centrality measures.
       - Visualize crime hotspots using geographical networks.
 
-### ***DATA*** <br>
 
+
+## ***DATA*** <br>
 
 **Non-Predictive Identifier Attributes:**
 1. **state**: Numeric code representing the U.S. state.
@@ -196,7 +197,8 @@
 - **PctPoliceViolations**: Percentage of reported violations by police personnel.
 - **PctJuvenilesInDetention**: Percentage of juveniles in detention facilities.
 
-### ***POSSIBLE PRE-BUILD NETWORK***
+
+## ***POSSIBLE PRE-BUILD NETWORK***
 To enhance your analysis of the "Communities and Crime" dataset, integrating it with existing networks can provide valuable insights. Below are recommendations for spatial, social, and economic networks that align with your dataset and facilitate easy matching of identifiers:
 
 **1. [Spatial Network: U.S. County Adjacency Network](https://www.census.gov/geographies/reference-files/2023/geo/county-adjacency.html?utm_source=chatgpt.com)**
@@ -233,9 +235,49 @@ To enhance your analysis of the "Communities and Crime" dataset, integrating it 
 
 4. **Analysis**: Conduct your analysis, leveraging the combined datasets to explore spatial, social, or economic patterns in crime data.
 
-By integrating these networks with your dataset, you can perform a comprehensive analysis that considers spatial proximity, social interactions, and economic relationships, providing a multidimensional perspective on crime patterns. 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## **Potential projects for each pre-built network** 
+
+### **1. Spatial Network: U.S. County Adjacency Network**
+   **Project Idea:**  
+   - **Title:** "Exploring Spatial Correlations in Crime Rates Across Adjacent U.S. Counties"
+   - **Objective:** Investigate how crime rates (e.g., violent crimes per population) and socioeconomic factors in one county are influenced by adjacent counties.
+   - **Approach:**
+     1. Build a graph where nodes represent counties and edges represent shared borders.
+     2. Assign crime rates and socioeconomic attributes as node properties.
+     3. Analyze spatial autocorrelation (e.g., using Moran's I) to determine if high-crime areas cluster geographically.
+     4. Visualize the results on a U.S. map to identify crime hotspots and diffusion patterns.
+   - **Outcome:** Understand spatial dependencies of crime, potentially uncovering regions where interventions could have ripple effects on neighboring areas.
+
+### **2. Social Network: U.S. County Commuting Patterns**
+   **Project Idea:**  
+   - **Title:** "Modeling the Social Mobility of Crime via Commuting Networks"
+   - **Objective:** Examine how commuting patterns between counties might influence the spread or distribution of criminal activity and social issues.
+   - **Approach:**
+     1. Use the commuting flow dataset to create a directed weighted network where nodes are counties, and edges represent commuter volume.
+     2. Analyze correlations between high-commuting flows and the similarity of crime rates or socioeconomic conditions.
+     3. Investigate if counties with high inflows from areas with higher crime rates exhibit higher local crime rates.
+   - **Outcome:** Discover how mobility impacts crime patterns and propose strategies for targeting areas with high commuter connections for interventions.
+
+### **3. Economic Network: U.S. County Trade Relationships**
+   **Project Idea:**  
+   - **Title:** "Economic Ties and Crime: A Network Analysis of U.S. Counties"
+   - **Objective:** Explore how economic interactions between counties influence crime rates, particularly property and economic crimes.
+   - **Approach:**
+     1. Create an economic network using trade or economic relationships as edges and nodes as counties.
+     2. Assign attributes like GDP, unemployment rates, and property crime rates to nodes.
+     3. Investigate whether economically interconnected counties have similar or divergent crime profiles.
+     4. Use community detection algorithms to identify economic clusters and assess their relationship to crime.
+   - **Outcome:** Determine if stronger economic ties correlate with lower crime rates, suggesting the role of shared prosperity in crime reduction.
+
+### **General Analysis Steps Across Projects:**
+1. **Data Cleaning and Integration:** Match FIPS codes in the "Communities and Crime" dataset with the chosen network dataset.
+2. **Feature Engineering:** Use graph metrics like centrality, clustering coefficient, and edge weights to create new features for analysis.
+3. **Visualization:** Use tools like Gephi, NetworkX, or GIS for spatial analysis and graph visualization.
+4. **Statistical and Predictive Modeling:** Apply regression models, clustering, or machine learning to identify patterns and predict outcomes.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## **Idea progetto 2**
 *Influenza di post di influencer che promuovono prodotti fake per dimagrimento e quando gli adolescenti (soprattutto femmine) vanno poi a comprare questi prodotti e sono interessati a provare queste cose (ultimo si può fare tramite analisi dei commenti sotto i post/video). <br>
 Social network da analizzare: Instagram, TikTok(?)* <br>
