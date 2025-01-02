@@ -217,32 +217,13 @@ To enhance your analysis of the "Communities and Crime" dataset, integrating it 
 
 - **Identifier Matching**: The dataset includes FIPS codes for counties, facilitating direct alignment with your dataset.
 
-**3. [Economic Network: U.S. County Trade Relationships](https://www.bea.gov/data/gdp/gdp-county-metro-and-other-areas)**
-
-- **Description**: This network illustrates economic interactions between counties, such as trade or supply chain connections.
-
-- **Data Source**: While specific datasets on county-level trade relationships are limited, the U.S. Bureau of Economic Analysis (BEA) provides regional economic accounts that can be used to infer economic linkages. 
-
-- **Identifier Matching**: BEA data often includes FIPS codes, allowing for integration with your dataset.
-
-**Integration Steps:**
-
-1. **Data Acquisition**: Download the relevant datasets from the provided sources.
-
-2. **Data Cleaning**: Ensure consistency in identifiers (e.g., FIPS codes) and handle any missing or inconsistent data.
-
-3. **Data Integration**: Merge the "Communities and Crime" dataset with the chosen network data based on matching identifiers.
-
-4. **Analysis**: Conduct your analysis, leveraging the combined datasets to explore spatial, social, or economic patterns in crime data.
-
-
 
 ## **Potential projects for each pre-built network** 
 
 ### **1. Spatial Network: U.S. County Adjacency Network**
    **Project Idea:**  
    - **Title:** "Exploring Spatial Correlations in Crime Rates Across Adjacent U.S. Counties"
-   - **Objective:** Investigate how crime rates (e.g., violent crimes per population) and socioeconomic factors in one county are influenced by adjacent counties.
+   - **Objective:** Investigate how crime rates (e.g., violent crimes per population) and socioeconomic factors in one county are influenced by adjacent countries.
    - **Approach:**
      1. Build a graph where nodes represent counties and edges represent shared borders.
      2. Assign crime rates and socioeconomic attributes as node properties.
@@ -259,17 +240,6 @@ To enhance your analysis of the "Communities and Crime" dataset, integrating it 
      2. Analyze correlations between high-commuting flows and the similarity of crime rates or socioeconomic conditions.
      3. Investigate if counties with high inflows from areas with higher crime rates exhibit higher local crime rates.
    - **Outcome:** Discover how mobility impacts crime patterns and propose strategies for targeting areas with high commuter connections for interventions.
-
-### **3. Economic Network: U.S. County Trade Relationships**
-   **Project Idea:**  
-   - **Title:** "Economic Ties and Crime: A Network Analysis of U.S. Counties"
-   - **Objective:** Explore how economic interactions between counties influence crime rates, particularly property and economic crimes.
-   - **Approach:**
-     1. Create an economic network using trade or economic relationships as edges and nodes as counties.
-     2. Assign attributes like GDP, unemployment rates, and property crime rates to nodes.
-     3. Investigate whether economically interconnected counties have similar or divergent crime profiles.
-     4. Use community detection algorithms to identify economic clusters and assess their relationship to crime.
-   - **Outcome:** Determine if stronger economic ties correlate with lower crime rates, suggesting the role of shared prosperity in crime reduction.
 
 ### **General Analysis Steps Across Projects:**
 1. **Data Cleaning and Integration:** Match FIPS codes in the "Communities and Crime" dataset with the chosen network dataset.
