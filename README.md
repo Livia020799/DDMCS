@@ -154,16 +154,6 @@
 - **autoTheftPerPop**: Number of auto thefts as a percentage of the population.
 - **arsonsPerPop**: Number of arsons as a percentage of the population.
 
-### ***Law Enforcement Features:***
-- **policBudget**: Budget allocated to the police department.
-- **PctPolicWhite**: Percentage of police officers who are white.
-- **PctPolicBlack**: Percentage of police officers who are Black.
-- **PctPolicHisp**: Percentage of police officers who are Hispanic.
-- **PctPolicAsian**: Percentage of police officers who are Asian.
-- **PctPolicOther**: Percentage of police officers from other ethnic groups.
-- **policCars**: Number of police cars per 1,000 population.
-- **policPerPop**: Number of police personnel per 1,000 population.
-
 ### ***Additional Predictive Attributes:***
 - **PctYoungKidsWorkMom**: Percentage of young children whose mothers work.
 - **PctTeenWorkMom**: Percentage of teenagers whose mothers work.
@@ -177,7 +167,6 @@
 - **PctPersWidowed**: Percentage of widowed persons in the population.
 - **PctTeenMom**: Percentage of teenage mothers.
 - **NumImmigRecent**: Number of recent immigrants (within 5 years).
-- **PctFemHeadHH**: Percentage of female-headed households.
 - **PctElderlyLivingAlone**: Percentage of elderly persons living alone.
 - **PctPopulationUnder5**: Percentage of the population under 5 years old.
 - **PctPopulationOver85**: Percentage of the population over 85 years old.
