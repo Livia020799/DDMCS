@@ -164,7 +164,6 @@
 - **PctPersDivorced**: Percentage of divorced persons in the population.
 - **PctPersSeparated**: Percentage of separated persons in the population.
 - **PctPersNeverMarried**: Percentage of never-married persons in the population.
-- **PctPersWidowed**: Percentage of widowed persons in the population.
 - **PctTeenMom**: Percentage of teenage mothers.
 - **NumImmigRecent**: Number of recent immigrants (within 5 years).
 - **PctElderlyLivingAlone**: Percentage of elderly persons living alone.
@@ -172,8 +171,6 @@
 - **PctPopulationOver85**: Percentage of the population over 85 years old.
 
 ### ***Economic and Crime-Related Metrics (continued):***
-- **PctArrested**: Percentage of the population arrested within the last year.
-- **PctVictimOfCrime**: Percentage of the population victimized by crime.
 - **PctCrimesAgainstPersons**: Percentage of crimes committed against individuals.
 - **PctCrimesAgainstProperty**: Percentage of crimes committed against property.
 - **PctCrimesDrugRelated**: Percentage of crimes related to drug offenses.
