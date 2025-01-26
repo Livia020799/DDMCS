@@ -1,7 +1,42 @@
 # DDMCS - Idee progetto <br>
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## **Idea progetto 2**
+
+### Edges and analysis
+
+Given the research question, **"analyze how the slave trade started and expanded,"** here’s a focused evaluation of your graph structure and edges:
+
+The goal is to study the **expansion of the slave trade**. This involves:
+1. Understanding the flow of trade (routes, ports, purchase places).
+2. Identifying key actors (owners, captains, vessels).
+3. Examining connections between these entities.
+
+### **Current Edges**
+
+#### 1. **Voyages ↔ Ports**
+- These edges are crucial to understanding trade routes. They capture the **movement** between departure ports, arrival ports, and purchase places.
+- **Keep these edges as they are.**
+
+#### 2. **Voyages ↔ Vessels ↔ Ports**
+- Adding edges from vessels to ports helps trace which vessels were used in specific ports (independent of voyages). 
+- **Retain this structure**, as it can help identify patterns like frequently used vessels at certain ports.
+
+#### 3. **Voyages ↔ Captains ↔ Vessels**
+- If captains can change across voyages for the same vessel, **both voyage-captain** and **vessel-captain** edges are necessary.
+- **Keep these edges**, as they differentiate voyage-specific captain assignments from broader vessel-captain associations.
+
+#### 4. **Owners ↔ Voyages**
+- Adding edges between **owners and voyages** can clarify ownership responsibility for specific voyages. This is valuable if you want to analyze the role of owners in driving the trade.
+- **Consider adding this edge.**
+
+#### 5. **Ports ↔ Ports (via Voyages)**
+- Directly connecting ports (e.g., departure to arrival) captures **trade routes** more explicitly. 
+- **Consider adding these edges** to analyze port connectivity and flow.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## **Idea progetto 1**
+## **Idea progetto 2**
 
 ### 1. *Understand Your [Dataset](https://archive.ics.uci.edu/dataset/183/communities+and+crime)*
    - *Examine the data*: The "Communities and Crime" dataset contains socioeconomic, crime-related, and demographic attributes, most of which are percentages.
